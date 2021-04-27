@@ -1,0 +1,93 @@
+/* GENERAL */
+
+@font-face
+/* Définition des Polices particulières */
+
+{
+    font-family: 'Raleway';
+    src: url('Police/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+body {
+    /* Plan Général Page */
+    max-width: 1200px;
+}
+
+
+/* ENTETE */
+
+header {
+    width: 600px;
+}
+
+header img {
+    max-width: 150px;
+}
+
+#entete {
+    display: flex;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 20px;
+}
+
+header h2 {
+    font-size: 15px;
+    font-style: normal;
+}
+
+nav a {
+    margin: 0 30px;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+}
+
+
+/* FILTRES */
+
+#filtre {
+    display: inline-flex;
+}
+
+#filtre h1 {
+    margin: 80px 80px 80px 80px;
+}
+
+.svg_autre {
+    width: 15px;
+    padding: 10px;
+    border-style: solid;
+    background-color: #DEEBFF;
+    border-radius: 50px 50px 50px 50px;
+    border-color: #DEEBFF;
+    transform: translate(5%, 120%);
+}
+
+#svg_bonhomme {
+    width: 10px;
+    padding: 10px;
+    border-style: solid;
+    background-color: #DEEBFF;
+    border-radius: 70px 70px 70px 70px;
+    border-color: #DEEBFF;
+    transform: translate(5%, 120%);
+}
+
+.encadre_svg {
+    padding-left: 50px;
+    padding-right: 10px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 35px 35px 35px 35px;
+    border-color: #F2F2F2;
+    font-size: 27px;
+}
+
+.encadre_svg:hover {
+    color: #0065FC;
+}
