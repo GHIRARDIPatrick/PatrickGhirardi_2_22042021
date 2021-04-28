@@ -185,7 +185,6 @@ nav li {
 #hebergement_aside {
     background-color: #F2F2F2;
     padding-left: 50px;
-    ;
     width: 400px;
 }
 
@@ -196,6 +195,11 @@ nav li {
     display: flex;
     justify-content: space-between;
     width: 1200px;
+}
+
+#svg_populaire {
+    width: 30px;
+    transform: translate(1100%, -140%);
 }
 
 
