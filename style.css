@@ -25,6 +25,10 @@ h2 {
     font-size: 15px;
 }
 
+.etoile {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+PGxpbmVhckdyYWRpZW50IGlkPSdncmFkaWVudCc+PHN0b3Agb2Zmc2V0PScxMCUnIHN0b3AtY29sb3I9JyNGMDAnLz48c3RvcCBvZmZzZXQ9JzkwJScgc3RvcC1jb2xvcj0nI2ZjYycvPiA8L2xpbmVhckdyYWRpZW50PjxyZWN0IGZpbGw9J3VybCgjZ3JhZGllbnQpJyB4PScwJyB5PScwJyB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJy8+PC9zdmc+");
+}
+
 
 /* ENTETE */
 
@@ -144,6 +148,54 @@ nav li {
 
 .encadre_svg:hover {
     color: #0065FC;
+}
+
+
+/* NOTE INFORMATION */
+
+#svg_info {
+    margin-top: 10px;
+    width: 3px;
+    padding: 4px;
+    border-style: solid;
+    background-color: white;
+    border-radius: 50%;
+    border-color: #DEEBFF;
+}
+
+#text_info {
+    padding-left: 30px;
+    transform: translate(0%, -215%);
+}
+
+
+/* HERBEGEMENT */
+
+#hebergement_section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hebergement_article {
+    background-color: #F2F2F2;
+    width: 650px;
+    padding-left: 30px;
+}
+
+#hebergement_aside {
+    background-color: #F2F2F2;
+    padding-left: 50px;
+    ;
+    width: 400px;
+}
+
+
+/* ACTIVITES */
+
+#activites_section {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
 }
 
 
