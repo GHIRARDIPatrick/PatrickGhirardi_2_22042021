@@ -53,6 +53,16 @@ em {
 
 /* ENTETE */
 
+#entete {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+#entete_responsive {
+    display: none;
+}
+
 header {
     width: 600px;
     padding-left: 20px;
@@ -64,12 +74,6 @@ header h1 {
 
 header img {
     max-width: 150px;
-}
-
-#entete {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10px;
 }
 
 header img {
@@ -116,7 +120,6 @@ nav a:last-child {
     font-size: 15px;
     width: 175px;
     height: 35px;
-    /*padding-top: 15px; */
     line-height: 50px;
 }
 
@@ -248,8 +251,6 @@ span:hover {
     height: 120px;
     padding: 4px;
     border-radius: 30px 0px 0px 30px;
-    /* min-height: 140px;
-height: 140px; */
     float: left;
 }
 
@@ -466,4 +467,142 @@ footer li {
     list-style: none;
     padding-bottom: 10px;
     padding-left: 20px;
+}
+
+
+/*  -----  VERSION MOBILE -----  */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        /* Plan Général Page */
+        width: 95%;
+        margin: auto;
+        border: solid 2px green;
+    }
+    /*  ENTETE RESPONSIVE  */
+    /* ENTETE */
+    #entete {
+        display: none;
+    }
+    #entete_responsive {
+        display: flex;
+        margin: 0px 5px 5px 0px;
+        border: solid 2px red;
+    }
+    #entete_responsive_premiere_partie {
+        border: solid 2px blue;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 5px;
+    }
+    header img {
+        float: left;
+    }
+    header a {
+        list-style: none;
+        text-decoration: none;
+        border: solid 2px rgb(0, 128, 28);
+    }
+    #header_a1 {
+        font-weight: bold;
+        padding-left: 130px;
+        line-height: 50px;
+    }
+    #header_a2 {
+        clear: both;
+        margin-left: 15%;
+    }
+    #header_a3 {
+        margin-left: 15%;
+    }
+    header h1 {
+        text-align: justify;
+        margin-right: 20px;
+    }
+    /* FILTRES */
+    #filtre {
+        padding-left: 20px;
+        font-weight: bold;
+    }
+    .alignement_filtre {
+        margin-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid 2px blue;
+    }
+    .alignement_filtre p {
+        padding-top: 5px;
+        border: solid 2px red;
+        flex-grow: 1;
+    }
+    /* NOTE INFORMATION */
+    #text_info {
+        padding-left: 80px;
+        transform: translate(0%, -140%);
+    }
+    /* POPULAIRE GENERAL */
+    .populaire_section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        padding-left: 10px;
+        width: 270px;
+        height: 600px;
+        margin-left: 25px;
+    }
+    /* HEBERGEMENT */
+    .hebergement_section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        min-height: 230px;
+        padding-bottom: 10px;
+        background-color: white;
+        border-radius: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        margin-left: 30px;
+        margin-top: 50px;
+        width: 64%;
+        height: auto;
+    }
+    /* ACTIVITES */
+    #activites_section {
+        display: flex;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-top: 40px;
+        margin-left: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        margin-top: 60px;
+        width: auto;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    footer div {
+        margin-bottom: 10px;
+    }
+    footer li {
+        list-style: none;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        margin-top: -20px;
+    }
 }
