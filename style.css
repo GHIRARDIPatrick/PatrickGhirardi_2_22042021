@@ -248,7 +248,7 @@ span:hover {
 
 .populaire_chambre img {
     width: 40%;
-    height: 120px;
+    height: 132px;
     padding: 4px;
     border-radius: 30px 0px 0px 30px;
     float: left;
@@ -376,6 +376,8 @@ span:hover {
     margin-top: auto;
     padding-left: 20px;
     width: 80%;
+    flex-grow: 1;
+    border: solid 2px white;
 }
 
 .activite_h2 {
@@ -479,6 +481,11 @@ footer li {
         margin: auto;
         border: solid 2px green;
     }
+    .h3 {
+        font-size: 10px;
+        padding-left: 15px;
+        transform: translate(0%, -100%);
+    }
     /*  ENTETE RESPONSIVE  */
     /* ENTETE */
     #entete {
@@ -552,9 +559,29 @@ footer li {
         background-color: #F2F2F2;
         border-radius: 0px;
         padding-left: 10px;
-        width: 270px;
+        width: auto;
+        margin-right: 25px;
         height: 600px;
         margin-left: 25px;
+    }
+    .populaire_chambre {
+        border: white;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 285px;
+        height: 112px;
+        clear: both;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    .populaire_h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 20px;
+    }
+    .populaire_h2 {
+        padding-left: 15px;
     }
     /* HEBERGEMENT */
     .hebergement_section {
@@ -562,31 +589,114 @@ footer li {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
-        min-height: 230px;
         padding-bottom: 10px;
         background-color: white;
         border-radius: 0px;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 20px;
-        margin-left: 30px;
+        margin-left: 25px;
         margin-top: 50px;
-        width: 64%;
+        width: 280px;
         height: auto;
+        border: solid 2px red;
+    }
+    .hebergement_h1 {
+        padding-left: 15px;
+    }
+    .hebergement_h2 {
+        padding-left: 15px;
+    }
+    /* HEBERGEMENT CHAMBRE */
+    .hebergement_chambre {
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 210px;
+        margin-bottom: 20px;
+    }
+    .hebergement_chambre img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 140px;
+    }
+    .hebergement_chambre i {
+        width: 10px;
+        margin-top: 10px;
+        transform: translate(200%, -300%);
     }
     /* ACTIVITES */
     #activites_section {
         display: flex;
-        /* flex-direction: row; */
+        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: left;
-        margin-top: 40px;
-        margin-left: 30px;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        background-color: white;
+        border-radius: 0px;
         padding-left: 10px;
         padding-right: 10px;
         padding-top: 20px;
-        width: 100%;
+        margin-left: 25px;
+        margin-top: 50px;
+        width: 280px;
         height: auto;
+        border: solid 2px red;
+    }
+    .activites_section_milieu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+    .activite_chambre_grande {
+        border: solid 2px blue;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 140px;
+        margin-bottom: 20px;
+    }
+    .activite_chambre_grande img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 100px;
+    }
+    .activite_chambre_moyenne {
+        border: solid 2px green;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 140px;
+        margin-bottom: 20px;
+    }
+    .activite_chambre_moyenne img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 100px;
+    }
+    .activite_chambre_petite {
+        border: solid 2px red;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 140px;
+        margin-bottom: 20px;
+    }
+    .activite_chambre_petite img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 100px;
     }
     footer {
         margin-top: 60px;
