@@ -232,15 +232,19 @@ span:hover {
     padding-left: 30px;
 }
 
+.populaire_section a {
+    color: black;
+    text-decoration: none;
+}
+
 
 /* POPULAIRE CHAMBRE */
 
 .populaire_chambre {
-    border: white;
     border-radius: 30px;
     background-color: white;
     max-width: 260px;
-    height: 120px;
+    height: 115px;
     clear: both;
     margin-bottom: 25px;
     padding-bottom: 25px;
@@ -310,6 +314,11 @@ span:hover {
     font-weight: bold;
 }
 
+.hebergement_section a {
+    color: black;
+    text-decoration: none;
+}
+
 .hebergement_afficher_plus {
     font-size: 15px;
     font-weight: bold;
@@ -324,7 +333,6 @@ span:hover {
 /* HEBERGEMENT CHAMBRE */
 
 .hebergement_chambre {
-    border: white;
     border-radius: 30px;
     background-color: white;
     max-width: 220px;
@@ -386,6 +394,11 @@ span:hover {
     margin-top: auto;
     padding-left: 15px;
     width: 90%;
+}
+
+#activites_section a {
+    color: black;
+    text-decoration: none;
 }
 
 .activite_chambre_grande {
