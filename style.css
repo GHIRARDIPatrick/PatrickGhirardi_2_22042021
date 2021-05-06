@@ -104,36 +104,41 @@ nav a:last-child {
     display: flex;
     justify-content: left;
     padding-left: 20px;
+    height: 30px;
 }
 
 #svg_map {
     width: 15px;
-    padding: 10px;
-    border-style: solid;
+    height: 19px;
+    border: solid 4px #F2F2F2;
     background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    border-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    padding-left: 5px;
+    padding-top: 3px;
 }
 
-#encadre_input {
-    outline: none;
-    font-size: 15px;
+#map {
     width: 175px;
-    height: 35px;
-    line-height: 50px;
+    margin: 0;
+    border-top: solid 2px #F2F2F2;
+    border-left: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
 }
 
 #bouton_rechercher {
-    margin-top: 15px;
     color: white;
+    font-weight: 600;
     background-color: #0065FC;
-    width: auto;
-    height: 20px;
-    padding: 10px 30px 10px 30px;
-    /* padding-top: 8px; */
-    border-style: solid;
-    border-radius: 0px 15px 15px 0px;
-    border-color: #F2F2F2;
+    margin: 0;
+    width: 75px;
+    padding: 0px 10px 3px 0px;
+    border: solid 4px #0065FC;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#svg_bouton_rechercher_mobile {
+    visibility: hidden;
 }
 
 
@@ -539,6 +544,35 @@ footer li {
     header h1 {
         text-align: justify;
         margin-right: 20px;
+    }
+    /* RECHERCHE */
+    #section_recherche {
+        display: flex;
+        justify-content: left;
+        /* padding-left: 20px; */
+        height: 30px;
+    }
+    #bouton_rechercher {
+        visibility: hidden;
+    }
+    #svg_bouton_rechercher_mobile {
+        visibility: visible;
+        color: white;
+        background-color: #0065FC;
+        margin: 0;
+        margin-left: -96px;
+        width: 25px;
+        padding: 3px 5px;
+        border: solid 5px #0065FC;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+    }
+    #map {
+        width: 245px;
+        margin: 0;
+        border-top: solid 2px #F2F2F2;
+        border-left: solid 2px #F2F2F2;
+        border-bottom: solid 2px #F2F2F2;
     }
     /* FILTRES */
     #filtre {
