@@ -53,6 +53,16 @@ em {
 
 /* ENTETE */
 
+#entete {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+#entete_responsive {
+    display: none;
+}
+
 header {
     width: 600px;
     padding-left: 20px;
@@ -64,12 +74,6 @@ header h1 {
 
 header img {
     max-width: 150px;
-}
-
-#entete {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10px;
 }
 
 header img {
@@ -88,6 +92,11 @@ nav a {
     text-decoration: none;
 }
 
+nav a:hover {
+    border-top: solid 2px red;
+    font-style: italic;
+}
+
 nav a:last-child {
     font-weight: bold;
     text-decoration: none;
@@ -100,37 +109,41 @@ nav a:last-child {
     display: flex;
     justify-content: left;
     padding-left: 20px;
+    height: 30px;
 }
 
 #svg_map {
     width: 15px;
-    padding: 10px;
-    border-style: solid;
+    height: 19px;
+    border: solid 4px #F2F2F2;
     background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
-    border-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    margin-top: 0px;
+    padding-left: 5px;
+    padding-top: 3px;
 }
 
-#encadre_input {
-    outline: none;
-    font-size: 15px;
+#map {
     width: 175px;
-    height: 35px;
-    /*padding-top: 15px; */
-    line-height: 50px;
+    margin: 0;
+    border-top: solid 2px #F2F2F2;
+    border-left: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
 }
 
 #bouton_rechercher {
-    margin-top: 15px;
     color: white;
+    font-weight: 600;
     background-color: #0065FC;
-    width: auto;
-    height: 20px;
-    padding: 10px 30px 10px 30px;
-    /* padding-top: 8px; */
-    border-style: solid;
-    border-radius: 0px 15px 15px 0px;
-    border-color: #F2F2F2;
+    margin: 0;
+    width: 75px;
+    padding: 0px 10px 3px 0px;
+    border: solid 4px #0065FC;
+    border-radius: 0px 10px 10px 0px;
+}
+
+#svg_bouton_rechercher_mobile {
+    visibility: hidden;
 }
 
 
@@ -184,29 +197,41 @@ nav a:last-child {
     transform: translate(0%, -26%);
 }
 
-span:hover {
+#filtre span:hover {
     color: #0065FC;
 }
 
 
 /* NOTE INFORMATION */
 
+#info {
+    display: flex;
+    justify-content: flex-start;
+    height: 35px;
+    margin-bottom: 30px;
+    padding-left: 15px;
+}
+
 #i_info {
-    margin-left: 30px;
-    width: 3px;
-    height: 7px;
-    padding: 10px;
-    padding-bottom: 15px;
-    border-style: solid;
+    width: 32px;
+    height: 32px;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    border: solid 1px #DEEBFF;
     background-color: white;
     border-radius: 50%;
-    border-color: #DEEBFF;
     color: #0065FC;
 }
 
+#i_info i {
+    margin-bottom: 10px;
+    padding-top: 6px;
+    padding-left: 13px;
+}
+
 #text_info {
-    padding-left: 80px;
-    transform: translate(0%, -220%);
+    padding-left: 15px;
+    padding-top: 6px;
 }
 
 
@@ -229,15 +254,19 @@ span:hover {
     padding-left: 30px;
 }
 
+.populaire_section a {
+    color: black;
+    text-decoration: none;
+}
+
 
 /* POPULAIRE CHAMBRE */
 
 .populaire_chambre {
-    border: white;
     border-radius: 30px;
     background-color: white;
     max-width: 260px;
-    height: 120px;
+    height: 115px;
     clear: both;
     margin-bottom: 25px;
     padding-bottom: 25px;
@@ -245,11 +274,9 @@ span:hover {
 
 .populaire_chambre img {
     width: 40%;
-    height: 120px;
+    height: 132px;
     padding: 4px;
     border-radius: 30px 0px 0px 30px;
-    /* min-height: 140px;
-height: 140px; */
     float: left;
 }
 
@@ -262,7 +289,7 @@ height: 140px; */
 .populaire_h1 {
     font-size: 20px;
     font-weight: bold;
-    margin-top: auto;
+    margin-top: 35px;
     padding-left: 20px;
 }
 
@@ -309,6 +336,11 @@ height: 140px; */
     font-weight: bold;
 }
 
+.hebergement_section a {
+    color: black;
+    text-decoration: none;
+}
+
 .hebergement_afficher_plus {
     font-size: 15px;
     font-weight: bold;
@@ -323,7 +355,6 @@ height: 140px; */
 /* HEBERGEMENT CHAMBRE */
 
 .hebergement_chambre {
-    border: white;
     border-radius: 30px;
     background-color: white;
     max-width: 220px;
@@ -353,6 +384,7 @@ height: 140px; */
     justify-content: left;
     margin-top: 40px;
     margin-left: 30px;
+    margin-right: 15px;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
@@ -365,8 +397,8 @@ height: 140px; */
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 2%;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .activite_h1 {
@@ -375,6 +407,8 @@ height: 140px; */
     margin-top: auto;
     padding-left: 20px;
     width: 80%;
+    flex-grow: 1;
+    border: solid 2px white;
 }
 
 .activite_h2 {
@@ -385,17 +419,22 @@ height: 140px; */
     width: 90%;
 }
 
+#activites_section a {
+    color: black;
+    text-decoration: none;
+}
+
 .activite_chambre_grande {
     border: white;
     border-radius: 30px;
     box-shadow: 2px 2px 10px #F2F2F2;
     background-color: white;
-    max-width: 220px;
+    max-width: 270px;
     height: 400px;
 }
 
 .activite_chambre_grande img {
-    width: 212px;
+    width: 270px;
     padding: 4px;
     border-radius: 30px 30px 0px 0px;
     height: 360px;
@@ -411,7 +450,7 @@ height: 140px; */
 }
 
 .activite_chambre_moyenne img {
-    width: 212px;
+    width: 220px;
     padding: 4px;
     border-radius: 30px 30px 0px 0px;
     height: 200px;
@@ -427,7 +466,7 @@ height: 140px; */
 }
 
 .activite_chambre_petite img {
-    width: 212px;
+    width: 220px;
     padding: 4px;
     border-radius: 30px 30px 0px 0px;
     height: 100px;
@@ -466,4 +505,282 @@ footer li {
     list-style: none;
     padding-bottom: 10px;
     padding-left: 20px;
+}
+
+
+/*  -----  VERSION MOBILE -----  */
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+    body {
+        /* Plan Général Page */
+        width: 95%;
+        margin: auto;
+        border: solid 2px green;
+    }
+    .h3 {
+        font-size: 10px;
+        padding-left: 15px;
+        transform: translate(0%, -100%);
+    }
+    /*  ENTETE RESPONSIVE  */
+    /* ENTETE */
+    #entete {
+        display: none;
+    }
+    #entete_responsive {
+        display: flex;
+        margin: 0px 5px 5px 0px;
+        border: solid 2px red;
+    }
+    #entete_responsive_premiere_partie {
+        border: solid 2px blue;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 5px;
+    }
+    header img {
+        float: left;
+    }
+    header a {
+        list-style: none;
+        text-decoration: none;
+        border: solid 2px rgb(0, 128, 28);
+    }
+    #header_a1 {
+        font-weight: bold;
+        padding-left: 130px;
+        line-height: 50px;
+    }
+    #header_a2 {
+        clear: both;
+        margin-left: 15%;
+    }
+    #header_a3 {
+        margin-left: 15%;
+    }
+    header h1 {
+        text-align: justify;
+        margin-right: 20px;
+    }
+    /* RECHERCHE */
+    #section_recherche {
+        display: flex;
+        justify-content: left;
+        /* padding-left: 20px; */
+        height: 30px;
+    }
+    #bouton_rechercher {
+        visibility: hidden;
+    }
+    #svg_bouton_rechercher_mobile {
+        visibility: visible;
+        color: white;
+        background-color: #0065FC;
+        margin: 0;
+        margin-left: -96px;
+        width: 25px;
+        padding: 3px 5px;
+        border: solid 5px #0065FC;
+        border-radius: 10px 10px 10px 10px;
+        text-align: center;
+    }
+    #map {
+        width: 245px;
+        margin: 0;
+        border-top: solid 2px #F2F2F2;
+        border-left: solid 2px #F2F2F2;
+        border-bottom: solid 2px #F2F2F2;
+    }
+    /* FILTRES */
+    #filtre {
+        padding-left: 20px;
+        font-weight: bold;
+    }
+    .alignement_filtre {
+        margin-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: wrap;
+        border: solid 2px blue;
+    }
+    .alignement_filtre p {
+        padding-top: 5px;
+        border: solid 2px red;
+        flex-grow: 1;
+    }
+    /* NOTE INFORMATION */
+    #info {
+        margin-top: 5px;
+        margin-right: 15px;
+    }
+    #i_info {
+        margin-top: 10px;
+    }
+    /* POPULAIRE GENERAL */
+    .populaire_section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #F2F2F2;
+        border-radius: 0px;
+        padding-left: 10px;
+        width: auto;
+        margin-right: 25px;
+        height: 600px;
+        margin-left: 25px;
+    }
+    .populaire_chambre {
+        border: white;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 285px;
+        height: 112px;
+        clear: both;
+        margin-bottom: 25px;
+        padding-bottom: 25px;
+    }
+    .populaire_h1 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 25px;
+        padding-left: 20px;
+    }
+    .populaire_h2 {
+        padding-left: 15px;
+    }
+    /* HEBERGEMENT */
+    .hebergement_section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        background-color: white;
+        border-radius: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        margin-left: 25px;
+        margin-top: 50px;
+        width: 280px;
+        height: auto;
+        border: solid 2px red;
+    }
+    .hebergement_h1 {
+        padding-left: 15px;
+    }
+    .hebergement_h2 {
+        padding-left: 15px;
+    }
+    /* HEBERGEMENT CHAMBRE */
+    .hebergement_chambre {
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 210px;
+        margin-bottom: 20px;
+    }
+    .hebergement_chambre img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 140px;
+    }
+    .hebergement_chambre i {
+        width: 10px;
+        margin-top: 10px;
+        transform: translate(200%, -300%);
+    }
+    /* ACTIVITES */
+    #activites_section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-bottom: 10px;
+        background-color: white;
+        border-radius: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        margin-left: 25px;
+        margin-top: 50px;
+        width: 280px;
+        height: auto;
+        border: solid 2px red;
+    }
+    .activites_section_milieu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .activite_chambre_grande {
+        border: solid 2px blue;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 140px;
+        margin-bottom: 20px;
+    }
+    .activite_chambre_grande img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 100px;
+    }
+    .activite_chambre_moyenne {
+        border: solid 2px green;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 140px;
+        margin-bottom: 20px;
+    }
+    .activite_chambre_moyenne img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 100px;
+    }
+    .activite_chambre_petite {
+        border: solid 2px red;
+        box-shadow: 5px 5px 5px #F2F2F2;
+        border-radius: 30px;
+        background-color: white;
+        max-width: 280px;
+        max-height: 140px;
+        margin-bottom: 20px;
+    }
+    .activite_chambre_petite img {
+        width: 272px;
+        padding: 4px;
+        border-radius: 30px 30px 0px 0px;
+        height: 100px;
+    }
+    footer {
+        margin-top: 60px;
+        width: auto;
+        background-color: #F2F2F2;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    footer div {
+        margin-bottom: 10px;
+    }
+    footer li {
+        list-style: none;
+        padding-bottom: 25px;
+        padding-left: 20px;
+        margin-top: -20px;
+    }
 }
