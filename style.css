@@ -248,12 +248,29 @@ nav a:last-child {
     padding-left: 10px;
     padding-right: 10px;
     width: 270px;
-    height: 600px;
+    height: 580px;
     margin-left: 72%;
 }
 
+.populaire_titre {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: green 2px solid;
+}
+
+.populaire_h1 {
+    font-size: 20px;
+    font-weight: bold;
+    width: 200px;
+    padding-left: 20px;
+    border: red 2px solid;
+}
+
 #populaire_svg {
-    padding-left: 30px;
+    padding: 10px;
+    border: blue 2px solid;
+    align-self: center;
 }
 
 .populaire_section a {
@@ -287,13 +304,6 @@ nav a:last-child {
     transform: translate(100%, 300%);
 }
 
-.populaire_h1 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 35px;
-    padding-left: 20px;
-}
-
 .populaire_h2 {
     font-size: 15px;
     font-weight: bold;
@@ -315,9 +325,9 @@ nav a:last-child {
     border-radius: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     margin-left: 30px;
-    margin-top: -600px;
+    margin-top: -580px;
     width: 64%;
     height: 570px;
 }
@@ -328,6 +338,7 @@ nav a:last-child {
     margin-top: auto;
     padding-left: 20px;
     width: 80%;
+    border: red 2px solid;
 }
 
 .hebergement_h2 {
