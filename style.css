@@ -518,6 +518,7 @@ footer li {
     body {
         /* Plan Général Page */
         width: 95%;
+        max-width: 480px;
         border: solid 2px green;
     }
     .h3 {
@@ -717,6 +718,7 @@ footer li {
     body {
         /* Plan Général Page */
         width: 95%;
+        max-width: 800px;
         border: solid 2px violet;
     }
     /* POPULAIRE GENERAL */
