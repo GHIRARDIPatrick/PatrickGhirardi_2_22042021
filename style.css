@@ -11,7 +11,7 @@
 body {
     /* Plan Général Page */
     font-family: 'Raleway';
-    width: 90%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     border: solid 2px red;
@@ -28,18 +28,6 @@ em {
     padding-left: 20px;
 }
 
-.h2 {
-    font-size: 15px;
-    margin-top: auto;
-    padding-left: 20px;
-}
-
-.h3 {
-    font-size: 10px;
-    padding-left: 20px;
-    transform: translate(0%, -100%);
-}
-
 .etoile_bleue {
     height: 3px;
     font-size: 10px;
@@ -53,55 +41,73 @@ em {
 }
 
 
-/* ENTETE */
-
-#entete {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10px;
-}
-
-#entete_responsive {
-    display: none;
-}
+/*  ENTETE  */
 
 header {
-    width: 600px;
+    width: 96%;
     padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 00px;
+    flex-wrap: wrap;
 }
 
-header h1 {
-    font-size: 20px;
-}
-
-header img {
-    max-width: 150px;
+.entete_partie_haute {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-decoration: none;
 }
 
 header img {
     max-width: 100px;
 }
 
-header h2 {
-    font-size: 15px;
-    font-weight: normal;
+nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
 }
 
 nav a {
     margin: 0px 30px;
     list-style: none;
-    display: inline;
     text-decoration: none;
+    padding: 10px;
 }
 
 nav a:hover {
-    border-top: solid 2px blue;
     font-style: italic;
+    background-color: #dbb5d9;
 }
 
-nav a:last-child {
+.header_a1 {
+    border-top: #0065FC 2px solid;
+}
+
+.header_a2 {
+    color: grey;
     font-weight: bold;
-    text-decoration: none;
+}
+
+.header_a3 {
+    font-weight: bold;
+}
+
+.entete_partie_basse {
+    width: 100%;
+}
+
+.entete_partie_basse h1 {
+    font-size: 20px;
+    align-content: center;
+}
+
+.entete_partie_basse p {
+    font-size: 15px;
+    font-weight: normal;
 }
 
 
@@ -126,7 +132,7 @@ nav a:last-child {
 }
 
 #map {
-    width: 175px;
+    width: 30%;
     margin: 0;
     border-top: solid 2px #F2F2F2;
     border-left: solid 2px #F2F2F2;
@@ -154,6 +160,10 @@ nav a:last-child {
 #filtre {
     padding-left: 2%;
     font-weight: bold;
+}
+
+#filtre h2 {
+    padding-top: 7px;
 }
 
 .alignement_filtre {
@@ -259,11 +269,24 @@ nav a:last-child {
     width: 100%;
 }
 
-.populaire_h1 {
+.populaire_section h2 {
     font-size: 20px;
     font-weight: bold;
     width: 200px;
     padding-left: 20px;
+}
+
+.populaire_section h3 {
+    font-size: 15px;
+    font-weight: bold;
+    width: 200px;
+    padding-left: 20px;
+}
+
+.populaire_section h4 {
+    font-size: 10px;
+    padding-left: 20px;
+    transform: translate(0%, -100%);
 }
 
 #populaire_svg {
@@ -303,7 +326,7 @@ nav a:last-child {
     transform: translate(100%, 300%);
 }
 
-.populaire_h2 {
+.populaire_h3 {
     font-size: 15px;
     font-weight: bold;
     padding-top: 10px;
@@ -330,7 +353,7 @@ nav a:last-child {
     height: 570px;
 }
 
-.hebergement_h1 {
+.hebergement_section h2 {
     font-size: 20px;
     font-weight: bold;
     margin-top: auto;
@@ -338,11 +361,17 @@ nav a:last-child {
     width: 95%;
 }
 
-.hebergement_h2 {
+.hebergement_section h3 {
     padding-left: 20px;
     margin-top: auto;
     font-size: 15px;
     font-weight: bold;
+}
+
+.hebergement_section h4 {
+    font-size: 10px;
+    padding-left: 20px;
+    transform: translate(0%, -100%);
 }
 
 .hebergement_section a {
@@ -407,7 +436,7 @@ nav a:last-child {
     justify-content: space-between;
 }
 
-.activite_h1 {
+#activites_section h2 {
     font-size: 20px;
     font-weight: bold;
     margin-top: auto;
@@ -417,7 +446,7 @@ nav a:last-child {
     border: solid 2px white;
 }
 
-.activite_h2 {
+#activites_section h3 {
     font-size: 15px;
     font-weight: bold;
     margin-top: auto;
@@ -497,7 +526,7 @@ footer {
     padding-bottom: 20px;
 }
 
-footer div {
+footer article {
     width: 600px;
 }
 
@@ -525,53 +554,49 @@ footer li {
 @media only screen and (max-width: 780px) {
     body {
         /* Plan Général Page */
-        width: 95%;
-        max-width: 480px;
+        width: 90%;
+        max-width: 780px;
         border: solid 2px green;
     }
     .h3 {
         padding-left: 15px;
     }
-    /*  ENTETE RESPONSIVE  */
-    #entete {
-        display: none;
-    }
-    #entete_responsive {
-        display: flex;
-        margin: 0px 5px 5px 0px;
-    }
-    #entete_responsive_premiere_partie {
-        justify-content: space-between;
-        flex-direction: row;
+    /*  ENTETE  */
+    .entete_partie_haute {
         flex-wrap: wrap;
-        margin-right: 5px;
-        border-bottom: solid 5px #F2F2F2;
+        justify-content: space-between;
     }
-    header img {
-        float: left;
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
     }
-    header a {
-        list-style: none;
-        text-decoration: none;
+    nav a {
+        margin: 0%;
     }
-    #header_a1 {
+    nav a:hover {
+        background-color: white;
+    }
+    .header_a1 {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-top: none;
+        border-bottom: #0065FC 4px solid;
+        text-align: center;
+    }
+    .header_a2 {
+        width: 100%;
+        text-align: center;
+        border-bottom: rgba(197, 195, 195, 0.877) 4px solid;
+    }
+    .header_a3 {
+        padding: 10px;
         font-weight: bold;
-        margin-left: 40%;
-        line-height: 50px;
-    }
-    #header_a2 {
-        clear: both;
-        margin-left: 15%;
-        color: #0065FC;
-        border-bottom: solid 2px #0065FC;
-    }
-    #header_a3 {
-        margin-left: 15%;
-        color: grey;
-    }
-    header h1 {
-        text-align: justify;
-        margin-right: 20px;
+        position: absolute;
+        top: 5%;
+        right: 5%;
     }
     /* RECHERCHE */
     #bouton_rechercher {
@@ -590,7 +615,7 @@ footer li {
         text-align: center;
     }
     #map {
-        width: 245px;
+        width: 80%;
     }
     /* FILTRES */
     #filtre {
