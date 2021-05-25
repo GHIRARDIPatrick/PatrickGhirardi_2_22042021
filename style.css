@@ -7,7 +7,6 @@ body {
     width: 100%;
     max-width: 1200px;
     margin: auto;
-    border: solid 2px red;
 }
 
 em {
@@ -542,7 +541,6 @@ footer li {
         /* Plan Général Page */
         width: 90%;
         max-width: 780px;
-        border: solid 2px green;
     }
     .h3 {
         padding-left: 15px;
@@ -749,7 +747,6 @@ footer li {
         /* Plan Général Page */
         width: 95%;
         max-width: 800px;
-        border: solid 2px violet;
     }
     /* POPULAIRE GENERAL */
     .populaire_section {
