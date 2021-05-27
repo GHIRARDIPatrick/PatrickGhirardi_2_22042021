@@ -135,9 +135,10 @@ nav a:hover {
 #section_recherche h2 {
     background-color: #0065FC;
     margin: 0;
+    margin-left: -1px;
     width: 100px;
     padding-bottom: 3px;
-    padding-left: 10px;
+    padding-left: 16px;
     border: solid 1px #0065FC;
     border-radius: 0px 10px 10px 0px;
     align-self: center;
@@ -440,7 +441,6 @@ nav a:hover {
     padding-left: 20px;
     width: 80%;
     flex-grow: 1;
-    border: solid 2px white;
 }
 
 #activites_section h3 {
@@ -603,7 +603,7 @@ footer li {
         color: white;
         background-color: #0065FC;
         margin: 0;
-        margin-left: -115px;
+        margin-left: -119px;
         width: 25px;
         padding: 3px 5px;
         border: solid 5px #0065FC;
