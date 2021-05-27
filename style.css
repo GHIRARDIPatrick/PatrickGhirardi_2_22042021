@@ -135,7 +135,7 @@ nav a:hover {
 #section_recherche h2 {
     background-color: #0065FC;
     margin: 0;
-    margin-left: -1px;
+    margin-left: -3px;
     width: 100px;
     padding-bottom: 3px;
     padding-left: 16px;
@@ -758,7 +758,7 @@ footer li {
 
 /*  -----  VERSION TABLETTE  -----  */
 
-@media only screen and (min-width: 780px) and (max-width: 1200px) {
+@media only screen and (min-width: 781px) and (max-width: 1200px) {
     body {
         /* Plan Général Page */
         width: 95%;
